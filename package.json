@@ -1,0 +1,31 @@
+{
+  "name": "civregister",
+  "version": "0.9.0",
+  "description": "Application d'enregistrement des faits d'état civils",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "package-deb": "electron-packager . civRegister --overwrite --asar --platform=linux --arch=x64 --icon=assets/senegal.png --prune=true --out=release-builds --ignore=__tests__",
+    "package-mac": "electron-packager . 'civRegister' --overwrite --platform=darwin --arch=x64 --icon=assets/icon-mac.icns --prune=true --out=release-builds --ignore=__tests__",
+    "package-win": "electron-packager . civRegister --overwrite --platform=win32 --arch=ia32 --icon=assets/senegal.ico --prune=true --out=release-builds --version-string.CompanyName=CE --version-string.FileDescription=CE --version-string.ProductName=\"civRegister\" --ignore=__tests__"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dofbi/civRegister.git"
+  },
+  "keywords": [
+    "code4senegal",
+    "register",
+    "civil"
+  ],
+  "author": "Mamadou Diagne",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dofbi/civRegister/issues"
+  },
+  "homepage": "https://github.com/dofbi/civRegister#readme",
+  "devDependencies": {
+    "electron": "^10.1.5",
+    "electron-packager": "^15.1.0"
+  }
+}

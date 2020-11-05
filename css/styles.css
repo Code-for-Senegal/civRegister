@@ -1,0 +1,31 @@
+body{
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    margin: 0 auto;
+    position: absolute;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: top center;
+    text-align: center;
+}
+
+main section{
+    margin-top: 735px;
+}
+.connexion{
+    background-image: url('../assets/wireframe/connexion.png');
+}
+
+.accueil{
+    background-image: url('../assets/wireframe/accueil.png');
+}
+
+.naissances{
+    background-image: url('../assets/wireframe/naissances.png');
+}
